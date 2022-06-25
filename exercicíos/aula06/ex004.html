@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Exercícios de JavaScript</title>
+    <style>
+        body{
+            background-color: rgb(73, 25, 185);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome? ');
+        document.write(`Olá <strong>${nome}</strong>. Seu nome tem ${nome.length} letras. <br>`); // Informando um número de letras do nome informado.
+        document.writeln(`Seu nome em maiúscuals é ${nome.toUpperCase()}.`); //Transformando o nome para letras maiúsculas.
+        document.writeln(`Seu nome em minúsculas é ${nome.toLowerCase()}.`); //Transformando o nome para letras minúsculas.
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Exercícios de JavaScript</title>
+    <style>
+        body{
+            background-color: rgb(73, 25, 185);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: gold;
+        }
+    </style>    
+</head>
+<body>
+    <h1>Exemplos em JavaScript</h1>
+    <p>Treinando variáveis simples em JavaScript, guardando informações dentro dela e utilizando em outro momento.</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')); // Convertendo para Int
+        var n2 = parseFloat(window.prompt('Digite outro número: ')); // Convertendo para Float
+        var n3 = Number(window.prompt('Digite outro número: ')); // Deixando que o JavaScript decida
+
+        var s = n1 + n2 + n3;
+        window.alert(`A soma dos valores entre ${n1}, ${n2} e ${n3} é igual a ${s}`);
+        // number + number para adição
+        // string + string para concatenação
+    </script>
+</body>
+</html>
