@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            font: normal 1em/20px Arial, Helvetica, sans-serif;
+        }
+        main{
+            margin: 1em;
+            padding: 1em;
+            width: 400px;
+            border: 20px dodgerblue outset;
+        }
+    
+        input{
+            font: normal 1em Arial, Helvetica, sans-serif;
+            width: 118px;
+        }
+        div#resultado{
+            width: 378px;
+            margin-top: 20px;
+            padding: 0.5em;
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Somando Valores</h1>
+        <input type="number" name="valor1" id="valor1"> <strong>+</strong>
+        <input type="number" name="valor2" id="valor2">
+        <input type="button" value="Somar" onclick="somar()">
+        <div id="resultado">
+            Resultado
+        </div>
+    </main>
+    <script>
+        function somar(){
+            var valor1 = window.document.getElementById('valor1'); //Por ID
+            var valor2 = window.document.querySelector('input#valor2'); //Por seletor
+            var resultado = window.document.getElementById('resultado');
+            var numero1 = Number(valor1.value);
+            var numero2 = Number(valor2.value);
+            var soma = numero1 + numero2;
+            resultado.innerHTML = `A soma entre <strong>${numero1}</strong> e <strong>${numero2}</strong> é igual a <strong>${soma}</strong>`;
+        }
+    </script>
+</body>
+</html>
