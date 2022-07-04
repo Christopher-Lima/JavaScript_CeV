@@ -5,10 +5,13 @@ function tabuada(){
     var resultado = 0;
 
     tabuada.innerHTML = '';
-
-    do{
-        resultado = numero*mult;
-        tabuada.innerHTML += `<option>${numero} * ${mult} = ${resultado}</option>`;
-        mult++
-    } while (mult <= 10)
+    if (numero == ''){
+        alert('Digite um número valido')
+    } else{
+        do{
+            resultado = numero*mult;
+            tabuada.innerHTML += `<option>${numero} * ${mult} = ${resultado}</option>`;
+            mult++
+        } while (mult <= 10)
+    }
 }
