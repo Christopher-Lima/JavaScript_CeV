@@ -7,12 +7,12 @@ número.push(7);
 letras.sort();
 número.sort((a,b)=>a-b);
 
-console.log(`As palavras em ordem alfabetica ficam ${letras}. Esse array possue ${letras.length} palavras.`);
+console.log(`As palavras em ordem alfabética ficam ${letras}. Esse array possuem ${letras.length} palavras.`);
 console.log(`Os números ordenados de forma crescente ficam: ${número}. Esse array possui ${número.length} números.\n`);
 
 //Outra forma de mostrar os valores dentro de um array.
 for(var posição=0;posição<letras.length;posição++){
-    console.log(`Indice ${posição}: A palavra dentro dele é ${letras[posição]}`);
+    console.log(`Índice ${posição}: A palavra dentro dele é ${letras[posição]}`);
 }
 console.log('')
 
@@ -23,5 +23,5 @@ for (var posição in número){
 console.log('')
 
 //Buscar um valor especifico
-console.log(`A palavra buscada está no indice ${letras.indexOf('Paixão')}`);
-console.log(`A palavra buscada está no indice ${letras.indexOf('Desistir')}`);
+console.log(`A palavra buscada está no índice ${letras.indexOf('Paixão')}`);
+console.log(`A palavra buscada está no índice ${letras.indexOf('Desistir')}`);
